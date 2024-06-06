@@ -56,5 +56,6 @@ jobs:
           touch .env
           echo "${{ secrets.CLIENT_ENV }}" > .env
           npm run build
+          rm -rf /var/www/Chat/*
           [ ! -d "/var/www/Chat" ] && mkdir /var/www/Chat
           mv dist/* /var/www/Chat/
