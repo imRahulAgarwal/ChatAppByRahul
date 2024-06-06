@@ -70,7 +70,14 @@ const Register = () => {
                                     </svg>
                                 )}
                             </label>
-                            <input className="border rounded focus:outline-none focus:ring-0 hidden" type="file" id="image" name="image" onChange={handleImageChange} />
+                            <input
+                                className="border rounded focus:outline-none focus:ring-0 hidden"
+                                type="file"
+                                id="image"
+                                name="image"
+                                onChange={handleImageChange}
+                                accept="image/png, image/gif, image/jpeg, image/heic, image/heif,"
+                            />
                             {preview && <img src={preview} className="rounded-full" />}
                         </div>
                         <div className="flex flex-col">

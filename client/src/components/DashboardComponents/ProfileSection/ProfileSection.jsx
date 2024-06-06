@@ -75,7 +75,14 @@ const ProfileSection = ({ setTab }) => {
                 <div className={`flex w-full justify-center`}>
                     {editProfile ? (
                         <div className="relative w-32">
-                            <input className="border rounded focus:outline-none focus:ring-0 hidden" type="file" id="image" name="image" onChange={handleImageChange} />
+                            <input
+                                className="border rounded focus:outline-none focus:ring-0 hidden"
+                                type="file"
+                                id="image"
+                                name="image"
+                                onChange={handleImageChange}
+                                accept="image/png, image/gif, image/jpeg, image/heic, image/heif"
+                            />
                             {preview && <img src={preview} className="w-32 h-32 rounded-full border border-[#00000035]" />}
                             <div className={`flex justify-between gap-x-4 ${preview ? "mt-2" : ""}`}>
                                 <label className="rounded-sm py-1 bg-gray-500 text-white cursor-pointer w-full flex justify-center" htmlFor="image">
