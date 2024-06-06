@@ -90,7 +90,7 @@ const ActiveChat = ({ messages, setMessages }) => {
     const friend = activeChat.users.filter((u) => u._id !== user._id)[0];
 
     return (
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-screen">
             <div className="flex border-b justify-between px-4 py-2">
                 <div className="flex items-center w-full">
                     <button className="text-black mr-4 sm:hidden" onClick={handleCloseButton}>
@@ -99,7 +99,7 @@ const ActiveChat = ({ messages, setMessages }) => {
                         </svg>
                     </button>
                     <div className="h-10 w-10 rounded-full">
-                        <img src={friend && friend.image} className="rounded-full" />
+                        <img src={friend && friend.image} className="rounded-full h-10 w-10" />
                     </div>
                     <div className="flex flex-col ml-2 justify-center">
                         <span className="">{friend && friend.name}</span>
