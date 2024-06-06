@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    height: 100%;
+    min-height: 100vh;
+    background-color: #f6f9fb;
+}
+
+.image-div {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 1px solid #00000035;
+}
+
+.image-label {
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-title,
+.app-sub-title {
+    color: #00000035;
+    -webkit-text-stroke-width: 1px;
+    padding: 0 1rem;
+    -webkit-text-stroke-color: #000000;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
