@@ -90,7 +90,7 @@ const ActiveChat = ({ messages, setMessages }) => {
     const friend = activeChat.users.filter((u) => u._id !== user._id)[0];
 
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-full">
             <div className="flex border-b justify-between px-4 py-2">
                 <div className="flex items-center w-full">
                     <button className="text-black mr-4 sm:hidden" onClick={handleCloseButton}>
