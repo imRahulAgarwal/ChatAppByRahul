@@ -104,7 +104,7 @@ const Dashboard = () => {
             const index = updatedChats.find((chat) => chat._id === request.chatId);
 
             if (index !== -1) updatedChats.splice(index, 1);
-            if (activeChatId === request.chatId) dispatch(setActiveChatId(""));
+            if (activeChat._id === request.chatId) dispatch(setActiveChatId(""));
             dispatch(setChats(updatedChats));
         });
     });
